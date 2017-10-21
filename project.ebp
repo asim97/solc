@@ -55,7 +55,7 @@
 				</Assembler>
 			</Target>
 			<Environment>
-				<Variable name="CV_FW_REV" value="0.1.10" />
+				<Variable name="CV_FW_REV" value="0.1.11" />
 			</Environment>
 		</Build>
 		<Device>
