@@ -389,6 +389,7 @@ static void runningRefresh(solc_t *self, void *evt)
     sensor = S_START();
     blinkPresc = 0;
     menu_blink(&self->menu);
+    GPIO_write(BSP_STATUS_LED, !GPIO_read(BSP_STATUS_LED));
   }
   // Reset watchdog timer
   WDG_resetTimer();

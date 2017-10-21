@@ -72,7 +72,7 @@ enum
 
 
 
-#define BSP_FAIL_LED              GPIO_MAKEPIN(2,13) // Active High
+#define BSP_STATUS_LED              GPIO_MAKEPIN(2,13) // Active High
 
 
 

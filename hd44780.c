@@ -152,10 +152,10 @@ static unsigned char lcd_read_status (void)
 static unsigned char wait_while_busy (void)
 {
   unsigned char status;
-
+  volatile uint32_t timeout = 100000;
   do  {
     status = lcd_read_status();
-  }  while (status & 0x80);             /* Wait for busy flag                 */
+  }  while ((status & 0x80) && timeout--);             /* Wait for busy flag                 */
 
   return (status);
 }

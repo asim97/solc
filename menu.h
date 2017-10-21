@@ -90,7 +90,7 @@ struct menu_t
   int state;
   volatile uint8_t update;
   uint8_t blinkState;
-  char is[16];
+  char is[17];
 };
 
 void menu_update(menu_t *self);

@@ -25,7 +25,7 @@ typedef struct
 
 static const bsp_led_t leds[] =
 {
-  {BSP_FAIL_LED, 1},
+  {BSP_STATUS_LED, 1},
 };
 
 // Newlib assert stub
@@ -101,7 +101,7 @@ void BSP_init(void)
     //{BSP_I2C1_SDA,   .mode = GPIO_MODE_AF | GPIO_OUTPUT_OD,         .param = 1},
    // {BSP_I2C1_SCL,   .mode = GPIO_MODE_AF | GPIO_OUTPUT_OD,         .param = 1},
     // Led
-    {BSP_FAIL_LED,   .mode = GPIO_MODE_OUTPUT | GPIO_OUTPUT_PP,             .param = 1},
+    {BSP_STATUS_LED,   .mode = GPIO_MODE_OUTPUT | GPIO_OUTPUT_PP,             .param = 1},
 
     {BSP_BTN_NAV1,    .mode = GPIO_INPUT_PULL_UP,                         .param = 0x0},
     {BSP_BTN_NAV2,    .mode = GPIO_INPUT_PULL_UP,                         .param = 0x0},

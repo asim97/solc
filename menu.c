@@ -260,8 +260,8 @@ void menu_draw(menu_t *self)
          self->is[n+self->item->ic->subItemStart+(self->item->ic->subItemDistance * self->editIndex)] = ' ';
 
       }
-      char line1[9];
-      char line2[9];
+      char line1[17];
+      char line2[17];
 
       snprintf(line1, sizeof(line1), "%s        ", self->item->name);
       snprintf(line2, sizeof(line2), "%s        ", self->is);
