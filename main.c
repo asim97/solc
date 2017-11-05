@@ -44,14 +44,6 @@ int target_main(void)
   // Init framework
   BLF_init();
   // Init Text Trace
-#if defined(TTRACE_ON) && defined(__arm__)
-  TTRACE_init();
-#endif
-
-  // Init configuration
-
- // config_init();
-
 
 
   BSP_init();
@@ -70,25 +62,11 @@ int target_main(void)
 
   solc_t *solc = solc_init();
 
-  //hid_keyboard_t *kbd = hid_keyboard_create();
-
-  usart_if_t *debugUart = USART_create(1);
-#if defined(TTRACE_ON)
-    // Set output UART for debug messages
-    TTRACE_setOutputUart(debugUart);
-#endif
-
-  //sm_init();
-  //suncatcher_init();
-
-
-  //sm_run(0, 10, 10000000);
   // Start scheduler
   BLF_schedule();
 
 
   while (1) {
-    TTRACE_process();
     solc_bg(solc);
   }
 

@@ -25,7 +25,6 @@
 					<Add option="-Wall" />
 					<Add option="-g3" />
 					<Add option="-DDEBUG" />
-					<Add option="-DTTRACE_ON" />
 				</Compiler>
 				<Assembler>
 					<Add option="-Wa,--gdwarf-2" />
@@ -45,7 +44,6 @@
 					<Add option="-fdata-sections" />
 					<Add option="-ffunction-sections" />
 					<Add option="-O2" />
-					<Add option="-DTTRACE_ON" />
 				</Compiler>
 				<Cpp>
 					<Add option="-O2" />
@@ -285,6 +283,8 @@
 		</Unit>
 		<Unit filename="testcmd.c">
 			<Option compilerVar="CC" />
+			<Option compile="0" />
+			<Option link="0" />
 		</Unit>
 		<Unit filename="testcmd.h" />
 		<Unit filename="trace_config.h" />

@@ -74,7 +74,7 @@ void BSP_init(void)
     // USER uart
     {BSP_DBG_UART_TX,  .mode = GPIO_MODE_AF, 	                              .param = 0x0}, 	// USART2_TX (Debug)
     {BSP_DBG_UART_RX,  .mode = GPIO_INPUT_PULL_UP,                         .param = 0x0}, 	// USART2_RX (Debug)
-    //{BSP_SLIP_UART_TX,  .mode = GPIO_MODE_AF, 	                             .param = 0x0}, 	// USART1_TX
+    //{BSP_SL3IP_UART_TX,  .mode = GPIO_MODE_AF, 	                             .param = 0x0}, 	// USART1_TX
     //{BSP_SLIP_UART_RX,  .mode = GPIO_MODE_INPUT | GPIO_INPUT_PULL_UP,        .param = 0x0}, 	// USART1_RX
 
     {BSP_M_1,        .mode = GPIO_MODE_OUTPUT | GPIO_OUTPUT_OD, 	         .param = 0x1},

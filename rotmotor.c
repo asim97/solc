@@ -20,8 +20,8 @@ typedef enum
   MOTOR_STATE_RUNNING,
 } motor_state_t;
 
-#define STOP_DELAY       10
-#define START_DELAY      10
+#define STOP_DELAY       15
+#define START_DELAY      15
 
 static motor_state_t state;
 static rotmotor_cmd_t targetState;

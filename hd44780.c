@@ -235,7 +235,7 @@ static void charge_pump_init(void)
   pwm_t *pwmb = PWM_create(t, 1);
   PWM_configure(pwmb, TIM_MODE_PWM, 0, 0);
 
-  PWM_setDuty(pwmb, PWM_MAX_DUTY * 0.05);
+  PWM_setDuty(pwmb, PWM_MAX_DUTY * 0.15);
   PWM_outputEnable(pwmb, 1);
   TIM_start(t);
 }
